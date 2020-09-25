@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEBEB"
+    tools:context=".tela5">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="386dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Diferentemente dos anos anteriores, em 1966 os Beatles lançaram apenas um álbum, tendo muita influência no psicodelismo que estava começando a surgir na época, esse ano também foi marcado pelo fim dos shows dos Beatles, a banda havia decidido que seria uma banda de estúdio e focaria apenas na produção."
+        android:textColor="#070707"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="385dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Para continuar, responda: quem criou a arte da capa do álbum Revolver? "
+        android:textColor="#070707"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="165dp"
+        android:layout_height="192dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/revolver" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:text="1966"
+        android:textColor="#000000"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="440dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="20dp"
+        android:background="#0B0B0B"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:onClick="clickErro6"
+        android:text="Mal Evans"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonStu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonStu" />
+
+    <Button
+        android:id="@+id/buttonKlaus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickTela6"
+        android:text="Klaus Voorman"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMartin"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMal"
+        app:layout_constraintStart_toStartOf="@+id/buttonMal"
+        app:layout_constraintTop_toTopOf="@+id/buttonMartin" />
+
+    <Button
+        android:id="@+id/buttonStu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="17dp"
+        android:onClick="clickErro6"
+        android:text="Stuart Sutcliffe"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMartin"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMartin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:onClick="clickErro6"
+        android:text="George Martin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStu"
+        app:layout_constraintStart_toStartOf="@+id/buttonStu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

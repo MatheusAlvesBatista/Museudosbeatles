@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEBEB"
+    tools:context=".tela8">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/let" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="219dp"
+        android:layout_height="178dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="380dp"
+        android:text="Em 1969 a banda fez suas últimas gravações, lançando o famoso Abbey Road, que é o último álbum a ser gravado, em 1970 é lançado o Let It Be, com a banda já terminada."
+        android:textColor="#070707"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="219dp"
+        android:layout_height="178dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="200dp"
+        android:text="Para continuar, responda: onde foi o ultimo show dos Beatles?"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="241dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:text="1969 e 1970"
+        android:textColor="#000000"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="151dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
+        app:layout_constraintEnd_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.074"
+        app:srcCompat="@drawable/abbey" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="440dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="20dp"
+        android:background="#0B0B0B"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttoncavern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:onClick="clickErro9"
+        android:text="Cavern Club"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonmontanha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonmontanha" />
+
+    <Button
+        android:id="@+id/buttonmontanha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="clickErro9"
+        android:text="Montanha"
+        app:layout_constraintBottom_toTopOf="@+id/buttontelhado"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonrua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickErro9"
+        android:text="Na rua"
+        app:layout_constraintBottom_toBottomOf="@+id/buttontelhado"
+        app:layout_constraintEnd_toEndOf="@+id/buttoncavern"
+        app:layout_constraintStart_toStartOf="@+id/buttoncavern"
+        app:layout_constraintTop_toTopOf="@+id/buttontelhado" />
+
+    <Button
+        android:id="@+id/buttontelhado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:onClick="clickTela9"
+        android:text="No telhado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonmontanha"
+        app:layout_constraintStart_toStartOf="@+id/buttonmontanha" />
+</androidx.constraintlayout.widget.ConstraintLayout>
